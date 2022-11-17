@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Time Table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <style>
+            h1{
+                font-family:Courier New;
+                text-align:center;
+                background-color:#6be7ad
+            }
+            .h{
+                font-family:Tahoma;
+                text-align:center;
+                font-style: bold;
+                font-size: 15px;
+            }
+            .para{
+                font-size:15px;
+                font-family:Tahoma;
+                text-align:center;
+                color:#000000
+            }
+            table, th, td {
+                border-bottom: 1px solid;
+                border-left: 1px solid;
+                border-right: 1px solid;
+                border-top: 1px solid;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            tr {
+                border-bottom: 1px solid #b3ff90;
+            }
+            table{
+                width: 50%;
+            }
+            .colour{
+                background-color: #ffb700;
+            }
+            .colour2{
+                background-color: #2c8c00;
+            }
+            .colour3{
+                background-color: #ffff00;
+            }
+            td{
+                background-color: #ffffff;
+            }
+            input[type=text] {
+                padding: 12px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                transition: width 2s ease-in-out;
+            }
+            label{
+                padding: 20px;
+                font-size: 20px;
+                font-family: 'Trebuchet MS';
+            }
+            input[type=text]:focus {
+                width: 100%;
+            }
+            input[type=button] {
+                background-color: #00ffbb;
+                border: none;
+                color: black;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            input[type=button]:hover {
+                background-color: #1ec6ec;
+            }
+        </style>
+        <script>
+            function add(){
+                x=parseInt(f1.tb1.value)
+                y=parseInt(f1.tb2.value)
+                z=x+y
+                document.getElementById("tb3").value=z;
+            }
+            function sub(){
+                x=parseInt(f1.tb1.value)
+                y=parseInt(f1.tb2.value)
+                z=x-y
+                document.getElementById("tb3").value=z;
+            }
+            function mul(){
+                x=parseInt(f1.tb1.value)
+                y=parseInt(f1.tb2.value)
+                z=x*y
+                document.getElementById("tb3").value=z;
+            }
+            function div(){
+                x=parseInt(f1.tb1.value)
+                y=parseInt(f1.tb2.value)
+                z=x/y
+                document.getElementById("tb3").value=z;
+            }
+            function mod(){
+                x=parseInt(f1.tb1.value)
+                y=parseInt(f1.tb2.value)
+                z=x%y
+                document.getElementById("tb3").value=z;
+            }
+        </script>
+    </head>
+    <body bgcolor="FFFDD1">
+        <table align="center">
+            <tr>
+                <td colspan="6" class="colour">
+                    <p class="h"><b>Days</b></p>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td rowspan="5" class="colour">
+                    <h2 class="h">Subjects</h2>
+                </td>
+                <td class="colour2">
+                    <p class="para">Monday</p>
+                </td>
+                <td class="colour2">
+                    <p class="para">Tuesday</p>
+                </td>
+                <td class="colour2">
+                    <p class="para">Wednesday</p>
+                </td>
+                <td class="colour2">
+                    <p class="para">Thursday</p>
+                </td>
+                <td class="colour2">
+                    <p class="para">Friday</p>
+                </td>  
+            </tr>
+            <tr>
+                <td>
+                    <p class="para">Maths</p>
+                </td>
+                <td>
+                    <p class="para">English</p>
+                </td>
+                <td>
+                    <p class="para">Hindi</p>
+                </td>
+                <td>
+                    <p class="para">Science</p>
+                </td>
+                <td>
+                    <p class="para">Pe</p>
+                </td>  
+            </tr>
+            <tr>
+                <td>
+                    <p class="para">Maths</p>
+                </td>
+                <td>
+                    <p class="para">Hindi</p>
+                </td>
+                <td>
+                    <p class="para">Tamil</p>
+                </td>
+                <td>
+                    <p class="para">Social</p>
+                </td>
+                <td>
+                    <p class="para">ICT</p>
+                </td>  
+            </tr>
+            <tr>
+                <td colspan="6" class="colour3">
+                    <p class="para">LUNCH</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="para">Social</p>
+                </td>
+                <td>
+                    <p class="para">ICT</p>
+                </td>
+                <td>
+                    <p class="para">Science</p>
+                </td>
+                <td>
+                    <p class="para">Hindi</p>
+                </td>
+                <td>
+                    <p class="para">Maths</p>
+                </td>  
+            </tr>
+        </table>
+    </body>
+</html>
